@@ -7,8 +7,8 @@ const AddTodos = (props) => {
         setInput(e.target.value)
     }
     const submitTask = (e) => {
-        if (input !== '') {
         e.preventDefault();
+        if (input !== '') {
         setInput('');
         props.setTaskList([...props.taskList, input])
         }
