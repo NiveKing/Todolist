@@ -12,10 +12,11 @@ const Todos = (props) => {
         </li>)
 
     return (
-        <div>
-            <ul>{lists}</ul>
-        </div>
- 
+            <ul>
+                <Stack gap={3}>
+                    {lists}
+                </Stack>
+            </ul>
     )
 }
   
