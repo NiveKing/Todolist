@@ -1,3 +1,5 @@
+
+
 const Todos = (props) => {
     const deleteHandle = (index) => {
         const newList = props.taskList.slice(0,index).concat(props.taskList.slice(index + 1, props.taskList.length));
