@@ -10,9 +10,9 @@ const Todos = (props) => {
         </li>)
 
     return (
-        <>
-        <ul>{lists}</ul>
-        </>
+        <div>
+            <ul>{lists}</ul>
+        </div>
  
     )
 }

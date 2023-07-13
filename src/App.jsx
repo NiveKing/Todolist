@@ -7,13 +7,11 @@ function App() {
   const [taskList, setTaskList] = useState([])
 
   return (
-    <>
     <div>
       <h1>TO DO LIST !</h1>
       <AddTodos taskList={taskList} setTaskList={setTaskList} />
       <Todos taskList={taskList} setTaskList={setTaskList}/>
     </div>
-    </>
   )
 }
 

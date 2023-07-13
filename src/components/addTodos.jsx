@@ -15,18 +15,19 @@ const AddTodos = (props) => {
     }
 
     return (
-        <>
-        {/* <div>
-            <input type="text" onChange={handleChange} value={input} placeholder="Let's Get Productive!" />
-            <button onClick={submitTask}>Add Task</button>
-        </div> */}
-        <form onSubmit={submitTask}>
-            <input type="text" onChange={handleChange} value={input} placeholder="Let's Get Productive!" />
-            <button type="submit">Add Task</button>
-        </form>
-        </>
+        <div>
+            <form onSubmit={submitTask}>
+                <input type="text" onChange={handleChange} value={input} placeholder="Let's Get Productive!" />
+                <button type="submit">Add Task</button>
+            </form>
+        </div>
     )
 
 }
+
+    {/* <div>
+            <input type="text" onChange={handleChange} value={input} placeholder="Let's Get Productive!" />
+            <button onClick={submitTask}>Add Task</button>
+        </div> */}
 
 export default AddTodos
