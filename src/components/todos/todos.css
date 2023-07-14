@@ -1,0 +1,10 @@
+#todos {
+    margin: 20px;
+    background-color: white;
+    border-radius: 20px 0 0 20px;
+    word-break: break-all;
+}
+
+.list {
+    background-color: white;
+}

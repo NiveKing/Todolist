@@ -1,5 +1,10 @@
 import { useState } from "react";
 
+import "./addTodos.css"
+import Button from 'react-bootstrap/Button';
+import Form from 'react-bootstrap/Form';
+import Stack from 'react-bootstrap/Stack';
+
 const AddTodos = (props) => {
     const [input, setInput] = useState('')
 
@@ -15,10 +20,12 @@ const AddTodos = (props) => {
     }
 
     return (
-        <div>
+        <div id="addtodos">
             <form onSubmit={submitTask}>
-                <input type="text" onChange={handleChange} value={input} placeholder="Let's Get Productive!" />
-                <button type="submit">Add Task</button>
+                <Stack gap={1}>
+                <Form.Control type="text" onChange={handleChange} value={input} placeholder="Let's Get Productive!"/>
+                <Button variant="light" type="submit">Add Task</Button>
+                </Stack>
             </form>
         </div>
     )
